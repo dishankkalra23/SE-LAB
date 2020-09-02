@@ -4,4 +4,4 @@ def divide(a,b):
         return a/b
     except:
         print("Could not perform the operation")
-        return 0;
+        return 0

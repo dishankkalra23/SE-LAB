@@ -2,31 +2,33 @@ import addition
 import sub
 import multiply
 import divide
-import mod shrey
+import mod
 
-num1 = int(input("Enter the first number: "))
+print("1.Addition\n2.Subtraction\n3.Multiplication\n4.Division\n5.Modulus")
+command = int(input("\nEnter your choice(number): "))
+
+num1 = int(input("\nEnter the first number: "))
 num2 = int(input("Enter the second number: "))
-
-print("Enter - 1. to  add, 2. to subtract, 3. to divide, 4. to multiply, 5. to mod")
-
-command = int(input("Enter the command to do add,subtract,divide,multiply,mod"))
 
 if command== 1:
     result = addition.add(num1,num2)
-    print("Sum of num1 and num2: ",result)
+    print("Sum: ",result)
 
 elif command== 2:
     result = sub.subtraction(num1,num2)
-    print("Subtract of num1 and num2: ",result)
+    print("Subtraction: ",result)
 
 elif command== 3:
     result = divide.divide(num1,num2)
-    print("Division of num1 and num2: ",result)
+    print("Division: ",result)
 
 elif command== 4:
     result = multiply.multiply(num1,num2)
-    print("Multiplication of num1 and num2: ",result)
+    print("Multiplication: ",result)
 
 elif command== 5:
-    result = mod shrey.mod(num1,num2)
-    print("Multiplication of num1 and num2: ",result)
+    result = mod.mod(num1,num2)
+    print("Remainder: ", result)
+    
+else:
+    print("Invalid Command")
